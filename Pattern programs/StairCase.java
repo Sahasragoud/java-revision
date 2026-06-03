@@ -1,0 +1,17 @@
+
+class StairCase {
+    public static void main(String[] args) {
+        int n = 6;
+
+        System.out.println("Stair Case: ");
+        for(int i = 1; i < n; i++){
+            
+            int k = (i % 2 != 0) ? i + 1 : i;
+            
+            for(int j = 0; j < k; j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
